@@ -47,17 +47,16 @@ Welcome to my personal portfolio website! This project serves as a dynamic showc
 
 ## Technologies Used 💻
 
-- **Frontend**: HTML5, CSS3, JavaScript
-- **Tools**: Vercel (hosting), 
+- **Frontend**: HTML5, CSS3, JavaScript.
+- **Tools**: Vercel (hosting)   
 
 ---
 
 ## Getting Started 🛠️
 
 ### Prerequisites
-- Node.js and npm installed
-- Git for version control
-- A code editor (e.g., VS Code)
+  - Git for version control
+  - A code editor (e.g., VS Code)
 
 ## Contributing 🤝
 Contributions are welcome! Follow these steps:
