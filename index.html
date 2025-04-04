@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ron's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header with Hamburger Menu -->
+    <header>
+        <div class="nav-bar">
+            <img src="images/logoo.png" class="logo" alt="Logo">
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#projects-section">Projects</a></li>
+                <li><a href="#contactme">Contact</a></li>
+            </ul>
+            <i class="fa-solid fa-bars" id="hamburger"></i>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <div id="home">
+        <div class="container">
+            <div class="intro-text">
+                <h1>Hello, I'm Ron Kibor.</h1>
+                <h3>Aspiring Software Developer</h3>
+            </div>  
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="sections">
+                <div class="about-sec1">
+                    <img src="images/ron9.jpg" alt="Ron Kibor">
+                </div>
+                <div class="about-sec2">
+                    <h1 class="descrip">About Me</h1><br>
+                    <p>My name is Kiplangat Ronny and I'm an aspiring software developer and system librarian.</p>
+                    <br>
+                    <div class="about-tabs"> 
+                        <p class="tab-ids active-id" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-ids" onclick="opentab('education')">Education</p>
+                        <p class="tab-ids" onclick="opentab('interests')">Interests</p>
+                        <p class="tab-ids" onclick="opentab('certificates')">Certificates</p>
+                    </div>
+                    <div class="tab-infos active-tab" id="skills">
+                        <ul>
+                            <li><span><b>Web Development</b></span><br>Building and designing websites and web application interfaces.</li><br>
+                            <li><span><b>Library Systems Management</b></span><br>Designing library software systems & maintaining library databases.</li><br>
+                            <li><span><b>Record Management</b></span><br>Processing record files, managing company/institution archives through record retrieval, appraisal & disposal.</li><br>
+                        </ul>
+                    </div>
+                    <div class="tab-infos" id="education">
+                        <ul>
+                            <li><span><b>February 2025 - present</b></span><br><br><i>Software Development And Technical skills</i><br>PLP Academy</li><br>
+                            <li><span><b>September 2018 - December 2023</b></span><br><br><i>Bsc. Library and Information Science</i><br>Technical University of Mombasa</li>
+                        </ul>
+                    </div>
+                    <div class="tab-infos" id="interests">
+                        <ul>
+                            <li><span><b>Mobile App Development</b></span><br>Building Android/iOS software applications for tablets, smartphones.</li><br>
+                            <li><span><b>Front-End Development</b></span><br>Creating websites and web applications using web languages such as HTML, CSS, and JavaScript that allow users to access and interact with the site or app.</li><br>
+                        </ul>
+                    </div>
+                    <div class="tab-infos" id="certificates">
+                        <ul>
+                            <li><span><b>Bachelor of Information Science | 2024</b></span><br><i>Technical University of Mombasa</i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Blog Section -->
+    <section>
+        <div id="blog">
+            <div class="container">
+                <div class="sections1">
+                    <div class="blog-sec1">
+                        <h1 class="title">My mini-blog:</h1><h3><i>What drives Ron?</i></h3>
+                        <p>My name is Kiplang'at Ronny. I'm an aspiring software developer and system librarian. I am a recent graduate of Technical University of Mombasa having pursued and completed a course in Bachelor of Library and Information Science. My passion for Software Engineering and especially the Front-End Development, Mobile app Development & Web Development was sparked through my course once I got to actually practice library and information science as profession. Initially, as volunteer library assistant, I got to learn basics of Web Design and in particular, how to develop a library management system for an academic library and maintaining the college's website(the library interface in particular), integrating and updating new features to it. Followed was during my industrial attachment, where I got to interact and equip myself with skills and database management and archives management, also network systems installation. Luckily, once I was done with campus, I got the chance to improve and sharpen my skills in software development further through a Software Engineering Scholarship Program courtesy of Power Learn Project-Africa(PLP-Africa). Being the best systems librarian in the country is my long term goal and that's what motivates me every single day and I hope to achieve my goal through my hardwork and focus.</p>
+                    </div>
+                    <div class="blog-sec2">
+                        <img src="images/ron7.jpg" alt="Ron Kibor">
+                    </div>
+                </div> 
+            </div>
+            <div class="btn-container">
+                <button class="btn btn-col-2" onclick="window.open('./files/resume.pdf')">Download CV</button>
+            </div>
+        </div>
+    </section> 
+    
+    <section id="projects-section">
+        <div class="container">
+            <h2 class="section-title">Sample Projects</h2>
+            
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/sample1.png" alt="Web Service Platform">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Web Service Platform</h3>
+                        <p class="project-description">
+                           Craft-Chip is an upcoming all-in-one web service platform designed to empower developers, startups, and enterprises to seamlessly create, deploy, and scale web-based applications and APIs. Combining intuitive low-code tools, AI-driven automation, and robust cloud infrastructure, 
+                            the platform simplifies workflows while offering enterprise-grade security and scalability.
+                        </p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>HTML & CSS</span>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://sample-app-henna.vercel.app/" class="demo-link">Live Demo</a>
+                            <a href="https://github.com/KiplangatRon/SAMPLE-APP.git" class="code-link">View Code</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/sample3.png" width="50" height="50" alt="Portfolio">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title"> My Portfolio</h3>
+                        <p class="project-description">
+                            A dynamic, visually driven portfolio showcasing cutting-edge projects, technical expertise, and problem-solving prowess across full-stack development, 
+                            cloud architecture, and UX/UI design. Designed to highlight both collaborative team efforts and solo innovations.
+                            <br>
+                            <br>
+                            <b> Currently In-Progress... </b>
+                        </p>
+                        <div class="project-tech">
+                            <span>HTML & CSS</span>
+                            <span>Node.js</span>
+                            <span>Next.js</span>
+                            <span>Vercel Hosting</span>
+
+                        </div>
+                        <div class="project-links">
+                            <a href="https://ronsportfolio.vercel.app/" class="demo-link">Live Demo</a>
+                            <a href="https://github.com/KiplangatRon/MyPortfolio.git" class="code-link">View Code</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/sample2.png" alt="Mobile App">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Tea Harvest & Commerce Suite</h3>
+                        <p class="project-description">
+                            LeafLedger is a specialized web platform under development to modernize tea estate management by digitizing plucking workflows, automating invoice generation, and providing end-to-end tracking of harvests, sales, and payments.
+                            Designed for small/medium tea growers and cooperatives, it bridges agriculture and commerce with precision.
+                            <br>
+                            <br>
+                            <b>Scheduled for start </b>
+                        </p>
+                        <div class="project-tech">
+                            <span>React.js</span>
+                            <span>Django(Python)</span>
+                            <span>PostreSQL + Redis</span>
+                            
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="demo-link">Live Demo</a>
+                            <a href="#" class="code-link">View Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Contact Section -->
+    <div id="contactme" class="contact-section">
+        <div class="container">
+            <p class="sub-title">Let's Connect</p>
+            <h1 class="title">Contact Me</h1>
+            
+            <div class="contact-wrapper">
+                <!-- Contact Information Card -->
+                <div class="contact-card">
+                    <div class="contact-method">
+                        <a href="mailto:kibor.ron@yahoo.com" class="contact-link">
+                            <img src="./files/envelope.svg" alt="Email" class="contact-icon">
+                            <div class="contact-details">
+                                <h3>Email Me</h3>
+                                <p>kibor.ron@yahoo.com</p>
+                            </div>
+                        </a>
+                    </div>
+    <br>
+    <br>
+    <br>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/kiplangat-ronny/" target="_blank" class="social-icon">
+                            <img src="./files/linkedin.svg" alt="LinkedIn">
+                        </a>
+                        <a href="https://github.com/KiplangatRon" target="_blank" class="social-icon">
+                            <img src="./files/github.svg" alt="GitHub">
+                        </a>
+                        <a href="https://www.instagram.com/ron.kibor/" target="_blank" class="social-icon">
+                            <img src="./files/instagram.svg" alt="Instagram">
+                        </a>
+                        <a href="https://x.com/0xkibor" target="_blank" class="social-icon">
+                            <img src="./files/twitter-x.svg" alt="X">
+                        </a>
+                    </div>
+                </div>
+    
+                <!-- Contact Form -->
+                <!-- Contact Form -->
+            <form class="contact-form" action="#" method="POST">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <!-- <h3 class="footer-heading">Navigation</h3> -->
+                    <ul class="footer-links">
+                        <li><a href="#home" class="footer-link">Home</a></li>
+                        <li><a href="#about" class="footer-link">About</a></li>
+                        <li><a href="#blog" class="footer-link">Blog</a></li>
+                        <li><a href="#projects" class="footer-link">Projects</a></li>
+                        <li><a href="#contactme" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Legal Information -->
+                <div class="footer-section">
+                    <!-- <h3 class="footer-heading">Legal</h3> -->
+                    <ul class="footer-links">
+                        <li><a href="#privacy" class="footer-link">Privacy Policy</a></li>
+                        <li><a href="#terms" class="footer-link">Terms of Service</a></li>
+                        <li><a href="#cookies" class="footer-link">Cookie Policy</a></li>
+                        <!-- <li><a href="#licensing" class="footer-link">Licensing</a></li> -->
+                    </ul>
+                </div>
+    
+                <!-- Company Info -->
+                <div class="footer-section">
+                    <!-- <h3 class="footer-heading">Company</h3> -->
+                    <p class="footer-text">
+                        Tom Mboya Rd<br>
+                        Mombasa, Kenya<br>
+                        Phone: (254) 799 561 598<br>
+                        Email: kibor.ron@yahoo.com
+                    </p>
+                </div>
+            </div>
+    
+            <!-- Copyright Section -->
+            <div class="footer-bottom">
+                <div class="copyright">
+                    © 2025 | Craft-Chip |. All Rights Reserved.
+                </div>
+                <div class="legal-links">
+                    <a href="#terms" class="footer-link">Terms of Use</a>
+                    <span class="divider">|</span>
+                    <a href="#privacy" class="footer-link">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        // Tabs functionality
+        var tabids = document.getElementsByClassName("tab-ids");
+        var tabinfos = document.getElementsByClassName("tab-infos");
+
+        function opentab(tabname) {
+            for (tabid of tabids) {
+                tabid.classList.remove("active-id");
+            }
+            for (tabinfo of tabinfos) {
+                tabinfo.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-id");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        // Hamburger menu functionality
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        //  JavaScript for mobile menu toggle
+document.getElementById('hamburger').addEventListener('click', function() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('active');
+});
+    </script>  
+</body>
+</html>
