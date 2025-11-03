@@ -79,7 +79,7 @@
                 height: 100vh;
                 width: 100%;
                 max-width: 300px;
-                background: rgba(0, 0, 0, 0.95);
+                background: rgba(0, 0, 0, 0.8);
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
@@ -99,7 +99,7 @@
         /* Home Section */
         #home {
             height: 100vh;
-            background-color: #4d5a5e; /* Fallback color */
+            background-color: #4d5a5e;
             background-image:url(images/ron6.jpg);
             background-position: center;
             background-size: cover;
@@ -119,7 +119,7 @@
         }
 
         .intro-text {
-            margin-top: 200px; /* Lowered the intro text */
+            margin-top: 200px;
         }
 
         .intro-text h1 {
